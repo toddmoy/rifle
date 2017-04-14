@@ -1,0 +1,31 @@
+@each $name, $value in $layoutSizes {
+  .u-ma-#{$name} {
+    margin: $value;
+  }
+
+  .u-mx-#{$name} {
+    margin-left:   $value;
+    margin-right:  $value;
+  }
+
+  .u-my-#{$name} {
+    margin-top:    $value;
+    margin-bottom: $value;
+  }
+
+  .u-ml-#{$name} {
+    margin-left:   $value;
+  }
+
+  .u-mr-#{$name} {
+    margin-right:  $value;
+  }
+
+  .u-mt-#{$name} {
+    margin-top:    $value;
+  }
+
+  .u-mb-#{$name} {
+    margin-bottom: $value;
+  }
+}

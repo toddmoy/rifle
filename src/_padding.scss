@@ -1,0 +1,31 @@
+@each $name, $value in $layoutSizes {
+  .u-pa-#{$name} {
+    margin: $value;
+  }
+
+  .u-px-#{$name} {
+    margin-left:   $value;
+    margin-right:  $value;
+  }
+
+  .u-py-#{$name} {
+    margin-top:    $value;
+    margin-bottom: $value;
+  }
+
+  .u-pl-#{$name} {
+    margin-left:   $value;
+  }
+
+  .u-pr-#{$name} {
+    margin-right:  $value;
+  }
+
+  .u-pt-#{$name} {
+    margin-top:    $value;
+  }
+
+  .u-pb-#{$name} {
+    margin-bottom: $value;
+  }
+}

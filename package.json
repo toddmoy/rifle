@@ -1,0 +1,41 @@
+{
+  "name": "rifle",
+  "version": "0.0.1",
+  "description": "This is my UI kit. There are many like it, but this one is mine. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddmoy/rifle.git"
+  },
+  "keywords": [
+    "UI",
+    "Bootstrap",
+    "Bourbon",
+    "User",
+    "Interface",
+    "Styles"
+  ],
+  "author": "Todd Moy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toddmoy/rifle/issues"
+  },
+  "homepage": "https://github.com/toddmoy/rifle#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylelint": "^3.9.0",
+    "gulp-watch": "^4.3.11",
+    "postcss-scss": "^0.4.1",
+    "run-sequence": "^1.2.2"
+  }
+}
