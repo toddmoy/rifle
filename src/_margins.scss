@@ -1,31 +1,31 @@
-@each $name, $value in $layoutSizes {
-  .u-ma-#{$name} {
+@each $key, $value in $layoutSizes {
+  .u-ma-#{$key} {
     margin: $value;
   }
 
-  .u-mx-#{$name} {
+  .u-mx-#{$key} {
     margin-left:   $value;
     margin-right:  $value;
   }
 
-  .u-my-#{$name} {
+  .u-my-#{$key} {
     margin-top:    $value;
     margin-bottom: $value;
   }
 
-  .u-ml-#{$name} {
+  .u-ml-#{$key} {
     margin-left:   $value;
   }
 
-  .u-mr-#{$name} {
+  .u-mr-#{$key} {
     margin-right:  $value;
   }
 
-  .u-mt-#{$name} {
+  .u-mt-#{$key} {
     margin-top:    $value;
   }
 
-  .u-mb-#{$name} {
+  .u-mb-#{$key} {
     margin-bottom: $value;
   }
 }

@@ -2,6 +2,7 @@ var gulp         = require('gulp'),
     notify       = require('gulp-notify'),
     scss         = require('gulp-sass'),
     csslint      = require('gulp-stylelint'),
+    cleancss     = require('gulp-clean-css'),
     sourcemaps   = require('gulp-sourcemaps'),
     plumber      = require('gulp-plumber'),
     watch        = require('gulp-watch'),
@@ -20,16 +21,17 @@ gulp.task('scss', function() {
   .pipe(sourcemaps.init())
   .pipe(plumber())
   .pipe(scss())
+  .pipe(cleancss())
   .pipe(sourcemaps.write())
   .pipe(autoprefixer({
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(csslint({
-    reporters: [
-      {formatter: 'string', console: true}
-    ]
-  }))
+  // .pipe(csslint({
+  //   reporters: [
+  //     {formatter: 'string', console: true}
+  //   ]
+  // }))
   .pipe(gulp.dest('./build/styles'))
   .pipe(browserSync.stream());
 });

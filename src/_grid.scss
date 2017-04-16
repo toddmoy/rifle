@@ -1,0 +1,48 @@
+.grid-container {
+  @extend .u-ctr;
+  max-width: $grid-maxWidth;
+  width: 100%;
+}
+
+.row:before,
+.row:after  {
+  @extend .u-cf;
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  padding: 0 $grid-gutterWidth;
+}
+
+@for $i from 1 through $grid-numOfColumns {
+  .col-#{$i} {
+    width: percentage($i / $grid-numOfColumns);
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @for $i from 1 through $grid-numOfColumns {
+      .col-#{$key}-#{$i} {
+        width: percentage($i / $grid-numOfColumns);
+      }
+    }
+  }
+}
+
+@for $i from 1 through $grid-numOfColumns {
+  .col-offset-#{$i} {
+    margin-left: percentage($i / $grid-numOfColumns);
+  }
+}
+
+@each $key, $value in $breakpoints {
+  @media (min-width: #{$value}) {
+    @for $i from 1 through $grid-numOfColumns {
+      .col-offset-#{$key}-#{$i} {
+        margin-left: percentage($i / $grid-numOfColumns);
+      }
+    }
+  }
+}

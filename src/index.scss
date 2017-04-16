@@ -1,7 +1,10 @@
+@import 'resets';
 @import 'variables';
 @import 'margins';
 @import 'padding';
-
-* {
-  box-sizing: border-box;
-}
+@import 'layout';
+@import 'grid';
+@import 'typography';
+@import 'buttons';
+@import 'images';
+@import 'inputs';

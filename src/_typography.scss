@@ -1,0 +1,63 @@
+// Font Stack
+
+body {
+  font-family: $type-font-fammily-a;
+  line-height: $type-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $type-font-fammily-a;
+}
+
+h1,
+.h1 {
+  font-size: $type-font-size-base * 2;
+}
+
+h2,
+.h2 {
+  font-size: $type-font-size-base * 1.5;
+}
+
+h3,
+.h3 {
+  font-size: $type-font-size-base * 1.25;
+}
+
+h4,
+.h4 {
+  @extend .u-tt-u;
+  font-size: $type-font-size-base;
+  letter-spacing: 1.5px;
+}
+
+h5,
+.h5 {
+  font-size: $type-font-size-base;
+}
+
+small,
+.small {
+  font-size: $type-font-size-base * 0.75;
+}
+
+// Text Align
+
+@each $key, $value in $type-justification {
+  .u-ta-#{$key} {
+    text-align: $value;
+  }
+}
+
+// Text Transform
+
+@each $key, $value in $type-textTransform {
+  .u-tt-#{$key} {
+    text-transform: $value;
+  }
+}

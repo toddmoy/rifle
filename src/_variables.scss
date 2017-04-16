@@ -5,3 +5,52 @@ $layoutSizes: (
   rg: $unit,
   lg: $unit * 2
 );
+
+$breakpoints: (
+  sm: 500px,
+  md: 900px,
+  lg: 1400px
+);
+
+// Grid
+
+$grid-numOfColumns: 12;
+$grid-maxWidth: 1400px;
+$grid-gutterWidth: $unit;
+
+// Typography
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700');
+
+$type-font-fammily-a: "work sans", "helvetica neue", helvetica, sans-serif;
+
+$type-font-size-base: 16px;
+
+$type-line-height: $type-font-size-base * 1.33;
+
+$type-justification: (
+  l: "left",
+  r: "right",
+  c: "center"
+);
+
+$type-textTransform: (
+  u: "uppercase",
+  n: "normal"
+);
+
+// Buttons
+
+$btn-bgcolor: white;
+$btn-color: black;
+$btn-border: solid black 1px;
+$btn-border-radius: 3px;
+
+$btn-bgcolor-primary: black;
+$btn-color-primary: white;
+$btn-border-primary: solid black 1px;
+
+// Inputs
+
+$input-border: solid #000 1px;
+$input-border-radius: 3px;

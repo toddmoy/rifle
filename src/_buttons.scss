@@ -1,0 +1,21 @@
+.btn {
+  @extend .u-pa-rg;
+  background-color: $btn-bgcolor;
+  border-radius: $btn-border-radius;
+  border: $btn-border;
+  color: $btn-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $type-font-fammily-a;
+  font-size: $type-font-size-base;
+}
+
+.btn-primary {
+  background-color: $btn-bgcolor-primary;
+  border: $btn-border-primary;
+  color: $btn-color-primary;
+}
+
+.btn[disabled] {
+  cursor: not-allowed;
+}

@@ -1,0 +1,16 @@
+label {
+  display: block;
+}
+
+input,
+input[type="search"] {
+  @extend .u-pa-rg;
+  border: $input-border;
+  border-radius: $input-border-radius;
+  font-family: $type-font-fammily-a;
+  font-size: $type-font-size-base;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+}
