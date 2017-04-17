@@ -12,10 +12,6 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 
-// Assumes the following structure:
-// ./src
-
-
 gulp.task('scss', function() {
   return gulp.src('./src/**/*.scss')
   .pipe(sourcemaps.init())
@@ -42,7 +38,6 @@ gulp.task('clean', function() {
 });
 
 
-// gulp.task('build', ['global-scss', 'global-js', 'local-scss', 'local-js', 'pug'],  function(){
 gulp.task('build', ['scss'],  function(){
   console.log("Building...")
 });
