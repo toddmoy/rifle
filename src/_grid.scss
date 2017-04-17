@@ -1,6 +1,6 @@
 .grid-container {
   @extend .u-ctr;
-  max-width: $grid-maxWidth;
+  max-width: map-get($grid, maxWidth);
   width: 100%;
 }
 
@@ -9,39 +9,53 @@
   @extend .u-cf;
 }
 
+// Global column settings
+
 [class*="col-"] {
   float: left;
   min-height: 1px;
-  padding: 0 $grid-gutterWidth;
+  padding: 0 map-get($grid, gutterWidth);
 }
 
-@for $i from 1 through $grid-numOfColumns {
+// Columns
+// example; .col-1
+
+@for $i from 1 through map-get($grid, numOfColumns) {
   .col-#{$i} {
-    width: percentage($i / $grid-numOfColumns);
+    width: percentage($i / map-get($grid, numOfColumns));
   }
 }
 
+// Breakpoint-oriented columns
+// example: .col-md-1
+
 @each $key, $value in $breakpoints {
   @media (min-width: #{$value}) {
-    @for $i from 1 through $grid-numOfColumns {
+    @for $i from 1 through map-get($grid, numOfColumns) {
       .col-#{$key}-#{$i} {
-        width: percentage($i / $grid-numOfColumns);
+        width: percentage($i / map-get($grid, numOfColumns));
       }
     }
   }
 }
 
-@for $i from 1 through $grid-numOfColumns {
+// Column offsets
+// example; .col-offset-1
+
+@for $i from 1 through map-get($grid, numOfColumns) {
   .col-offset-#{$i} {
-    margin-left: percentage($i / $grid-numOfColumns);
+    margin-left: percentage($i / map-get($grid, numOfColumns));
   }
 }
 
+// Breakpoint-oriented column offsets
+// example; .col-offset-md-1
+
 @each $key, $value in $breakpoints {
   @media (min-width: #{$value}) {
-    @for $i from 1 through $grid-numOfColumns {
+    @for $i from 1 through map-get($grid, numOfColumns) {
       .col-offset-#{$key}-#{$i} {
-        margin-left: percentage($i / $grid-numOfColumns);
+        margin-left: percentage($i / map-get($grid, numOfColumns));
       }
     }
   }

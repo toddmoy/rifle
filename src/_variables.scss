@@ -12,11 +12,15 @@ $breakpoints: (
   lg: 1400px
 );
 
-// Grid
+$grid: (
+  numOfColumns: 12,
+  gutterWidth:  $unit,
+  maxWidth:     1400px
+);
 
-$grid-numOfColumns: 12;
-$grid-maxWidth: 1400px;
-$grid-gutterWidth: $unit;
+// $grid-numOfColumns: 12;
+// $grid-maxWidth: 1400px;
+// $grid-gutterWidth: $unit;
 
 // Typography
 
