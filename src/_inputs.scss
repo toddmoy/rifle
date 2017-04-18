@@ -5,10 +5,10 @@ label {
 input,
 input[type="search"] {
   @extend .u-pa-rg;
-  border: $input-border;
-  border-radius: $input-border-radius;
-  font-family: $type-font-fammily-a;
-  font-size: $type-font-size-base;
+  border       : map-get($input, border);
+  border-radius: map-get($input, radius);
+  font-family  : map-get($type-base, family);
+  font-size    : map-get($type-base, size);
 }
 
 input[disabled] {

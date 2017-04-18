@@ -1,7 +1,7 @@
 .grid-container {
   @extend .u-ctr;
   max-width: map-get($grid, maxWidth);
-  width: 100%;
+  width    : 100%;
 }
 
 .row:before,
@@ -12,9 +12,9 @@
 // Global column settings
 
 [class*="col-"] {
-  float: left;
+  float     : left;
   min-height: 1px;
-  padding: 0 map-get($grid, gutterWidth);
+  padding   : 0 map-get($grid, gutterWidth);
 }
 
 // Columns

@@ -1,19 +1,18 @@
 .btn {
   @extend .u-pa-rg;
-  background-color: $btn-bgcolor;
-  border-radius: $btn-border-radius;
-  border: $btn-border;
-  color: $btn-color;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $type-font-fammily-a;
-  font-size: $type-font-size-base;
+  background-color: map-get($button, bgcolor);
+  border-radius   : map-get($button, radius);
+  border          : map-get($button, border);
+  color           : map-get($button, color);
+  cursor          : pointer;
+  display         : inline-block;
+  font-family     : map-get($type-base, family);
+  font-size       : map-get($type-base, size);
 }
 
 .btn-primary {
-  background-color: $btn-bgcolor-primary;
-  border: $btn-border-primary;
-  color: $btn-color-primary;
+  background-color: map-get($button-primary, bgcolor);
+  color           : map-get($button-primary, color);
 }
 
 .btn[disabled] {

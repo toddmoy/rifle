@@ -1,8 +1,8 @@
 // Font Stack
 
 body {
-  font-family: $type-font-fammily-a;
-  line-height: $type-line-height;
+  font-family: map-get($type-base, family);
+  line-height: map-get($type-base, leading);
 }
 
 h1,
@@ -11,39 +11,39 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $type-font-fammily-a;
+  font-family: map-get($type-base, family);
 }
 
 h1,
 .h1 {
-  font-size: $type-font-size-base * 2;
+  font-size: 2 * map-get($type-base, size);
 }
 
 h2,
 .h2 {
-  font-size: $type-font-size-base * 1.5;
+  font-size: 1.5 * map-get($type-base, size);
 }
 
 h3,
 .h3 {
-  font-size: $type-font-size-base * 1.25;
+  font-size: 1.25 * map-get($type-base, size);
 }
 
 h4,
 .h4 {
   @extend .u-tt-u;
-  font-size: $type-font-size-base;
+  font-size: map-get($type-base, size);
   letter-spacing: 1.5px;
 }
 
 h5,
 .h5 {
-  font-size: $type-font-size-base;
+  font-size: map-get($type-base, size);
 }
 
 small,
 .small {
-  font-size: $type-font-size-base * 0.75;
+  font-size: 0.75 * map-get($type-base, size);
 }
 
 // Text Align

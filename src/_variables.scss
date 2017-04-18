@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700');
+
 $unit: 8px;
+
+$colors: (
+  primary:   #000,
+  secondary: #fff,
+  tertiary:  #00f
+);
 
 $layoutSizes: (
   sm: $unit * 0.75,
@@ -18,24 +26,16 @@ $grid: (
   maxWidth:     1400px
 );
 
-// $grid-numOfColumns: 12;
-// $grid-maxWidth: 1400px;
-// $grid-gutterWidth: $unit;
-
-// Typography
-
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700');
-
-$type-font-fammily-a: "work sans", "helvetica neue", helvetica, sans-serif;
-
-$type-font-size-base: 16px;
-
-$type-line-height: $type-font-size-base * 1.33;
+$type-base: (
+  family:  #{"work sans", "helvetica neue", helvetica, sans-serif},
+  size:    $unit * 2,
+  leading: $unit * 2 * 1.33
+);
 
 $type-justification: (
+  c: "center",
   l: "left",
-  r: "right",
-  c: "center"
+  r: "right"
 );
 
 $type-textTransform: (
@@ -43,18 +43,21 @@ $type-textTransform: (
   n: "normal"
 );
 
-// Buttons
+$button: (
+  bgcolor: white,
+  border:  solid black 1px,
+  color:   black,
+  radius:  3px
+);
 
-$btn-bgcolor: white;
-$btn-color: black;
-$btn-border: solid black 1px;
-$btn-border-radius: 3px;
+$button-primary: (
+  bgcolor: black,
+  color:   white
+);
 
-$btn-bgcolor-primary: black;
-$btn-color-primary: white;
-$btn-border-primary: solid black 1px;
-
-// Inputs
-
-$input-border: solid #000 1px;
-$input-border-radius: 3px;
+$input: (
+  bgcolor: white,
+  border:  solid black 1px,
+  color:   black,
+  radius:  3px
+);
