@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
 $unit: 8px;
 
 $colors: (
-  primary:   #000,
+  primary:   #58575F,
   secondary: #fff,
   tertiary:  #00f
 );
@@ -27,9 +27,9 @@ $grid: (
 );
 
 $type-base: (
-  family:  #{"work sans", "helvetica neue", helvetica, sans-serif},
+  family:  #{'Roboto', "helvetica neue", helvetica, sans-serif},
   size:    $unit * 2,
-  leading: $unit * 2 * 1.33
+  leading: $unit * 2 * 1.5
 );
 
 $type-justification: (

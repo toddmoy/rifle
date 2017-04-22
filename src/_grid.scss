@@ -9,6 +9,15 @@
   @extend .u-cf;
 }
 
+// If a grid is nested in a column, shift it left and
+// increase its width, so that its content aligns with
+// the parent columns'.
+
+[class*="col-"] .row {
+  margin: 0 -1 * map-get($grid, gutterWidth);
+  width: calc(100% + 2 * map-get($grid, gutterWidth));
+}
+
 // Global column settings
 
 [class*="col-"] {

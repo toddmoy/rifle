@@ -28,7 +28,7 @@ gulp.task('scss', function() {
   //     {formatter: 'string', console: true}
   //   ]
   // }))
-  .pipe(gulp.dest('./build/rifle.css'))
+  .pipe(gulp.dest('./build/'))
   .pipe(browserSync.stream());
 });
 

@@ -5,40 +5,50 @@ body {
   line-height: map-get($type-base, leading);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: map-get($type-base, family);
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+p,
+ol,
+ul,
+blockquote {
+  @extend .u-mb-lg;
+  margin-top: 0;
 }
 
 h1,
 .h1 {
   font-size: 2 * map-get($type-base, size);
+  font-weight: 300;
 }
 
 h2,
 .h2 {
   font-size: 1.5 * map-get($type-base, size);
+  font-weight: 300;
 }
 
 h3,
 .h3 {
   font-size: 1.25 * map-get($type-base, size);
+  font-weight: 300;
 }
 
 h4,
 .h4 {
   @extend .u-tt-u;
   font-size: map-get($type-base, size);
+  font-weight: 500;
   letter-spacing: 1.5px;
 }
 
 h5,
 .h5 {
   font-size: map-get($type-base, size);
+  font-weight: 500;
 }
 
 small,
@@ -46,11 +56,18 @@ small,
   font-size: 0.75 * map-get($type-base, size);
 }
 
+blockquote {
+  @extend .u-px-lg;
+  border-left:  solid map-get($colors, primary) 1px;
+  margin-left:  0;
+  margin-right: 0;
+}
+
 // Text Align
 
 @each $key, $value in $type-justification {
   .u-ta-#{$key} {
-    text-align: $value;
+    text-align: $value !important;
   }
 }
 
@@ -58,6 +75,6 @@ small,
 
 @each $key, $value in $type-textTransform {
   .u-tt-#{$key} {
-    text-transform: $value;
+    text-transform: $value !important;
   }
 }

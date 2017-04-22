@@ -1,31 +1,31 @@
 @each $key, $value in $layoutSizes {
   .u-pa-#{$key} {
-    padding: $value;
+    padding: $value !important;
   }
 
   .u-px-#{$key} {
-    padding-left:   $value;
-    padding-right:  $value;
+    padding-left:   $value !important;
+    padding-right:  $value !important;
   }
 
   .u-py-#{$key} {
-    padding-top:    $value;
-    padding-bottom: $value;
+    padding-top:    $value !important;
+    padding-bottom: $value !important;
   }
 
   .u-pl-#{$key} {
-    padding-left:   $value;
+    padding-left:   $value !important;
   }
 
   .u-pr-#{$key} {
-    padding-right:  $value;
+    padding-right:  $value !important;
   }
 
   .u-pt-#{$key} {
-    padding-top:    $value;
+    padding-top:    $value !important;
   }
 
   .u-pb-#{$key} {
-    padding-bottom: $value;
+    padding-bottom: $value !important;
   }
 }
