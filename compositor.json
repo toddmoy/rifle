@@ -1,0 +1,81 @@
+{
+  "name": "toddmoy/rifle",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Rifle",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/toddmoy/rifle",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/Rifle",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "rifle",
+      "subhead": "This is my UI kit. There are many like it, but this one is mine. ",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "rifle: This is my UI kit. There are many like it, but this one is mine. ",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "toddmoy",
+          "repo": "rifle"
+        }
+      ],
+      "text": "v0.0.1"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/toddmoy/rifle",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/toddmoy",
+          "text": "toddmoy"
+        }
+      ]
+    }
+  ]
+}
